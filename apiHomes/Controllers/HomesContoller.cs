@@ -40,7 +40,7 @@ namespace apiHomes.Controllers
         [HttpPost]
         public async Task<ActionResult<Home>> PostHome(Home home)
         {
-            if (home == null)
+            if (home == null) 
                 return BadRequest(); 
 
             _context.Homes.Add(home);

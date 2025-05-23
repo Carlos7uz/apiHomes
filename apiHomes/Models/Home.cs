@@ -10,6 +10,7 @@
         public int AvailableUnits { get; set; }
         public Boolean Wifi { get; set; }
         public Boolean Laundry { get; set; }
+        public string TypeOfBusiness { get; set; }
         public string CreateBy { get; set; }
         public string? EditedBy {  get; set; }
         public string? DeletedBy { get; set; }

@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using apiHomes.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace apiHomes.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class HomesController : ControllerBase
     {
         private readonly AppDbContext _context;

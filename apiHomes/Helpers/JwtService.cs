@@ -28,7 +28,7 @@ namespace apiHomes.Helpers
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
-                issuer: _config["JwtSecurityToken:Issuer"],
+                issuer: _config["Jwt:Issuer"],
                 audience: _config["Jwt:Audience"],
                 claims: claims,
                 expires: DateTime.Now.AddMinutes(double.Parse(_config["Jwt:ExpireMinutes"])),

@@ -9,5 +9,9 @@ namespace apiHomes.Models
         public DbSet<Home> Homes { get; set; }
         public DbSet<User> User { get; set; }
         public DbSet<Review> Review { get; set; }
+        public DbSet<Favorite> Favorite { get; set; }
+        public DbSet<Inscription> Inscription { get; set; }
+        public DbSet<Visit> Visit { get; set; }
+
     }
 }

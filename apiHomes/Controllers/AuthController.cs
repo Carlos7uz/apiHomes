@@ -37,8 +37,15 @@ namespace apiHomes.Controllers
             return Ok(new LoginResponse
             {
                 Token = token,
-                Nome = user.Name,
-                Email = user.Email
+                User = new UserDTO
+                {
+                    Name = user.Name,
+                    Email = user.Email,
+                    Status = user.Status,
+                    Role = user.Role,
+                    Phone = user.Phone,
+                    Location = user.Location
+                }
             });
         }
 
